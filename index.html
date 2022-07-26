@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Transfer Learning - TensorFlow.js</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  </head>  
+  <body>
+    <div class="scene">
+      <div class="wrapper">
+        <div class="header">
+          <div class="title">
+            Teach Table Machine Learning v1.0
+          </div>
+          <div class="properties">
+            <div class="property start">By Ridwan Mahenra</div>
+          </div>
+          <div class="statusm">
+            <p id="statusmodel">Loading... TensorFlow.js load</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrapecon">
+        <div class="container1">
+          <video id="webcam" autoplay muted></video>
+          <div><button id="enableCam" class="camE">Enable Camera</button></div>
+        </div>
+        <div class="container2">
+          <p>DATA COUNT</p>
+          <div class="statusm2">
+            <p id="class1name" > CLASS 1</p>
+            <p id="class2name" >CLASS 2</p>
+          </div>
+          <div class="statusm3">
+            <p id="statuscount">0</p>
+            <p id="statuscount2">0</p>
+          </div>
+          <div class="line2"></div>
+          <p>GET DATA CLASS 1</p>
+          <div><button class="dataCollector" data-1hot="0" data-name="Class 1">Hold to Record</button></div>
+          
+          <div class="line2"></div>
+          <p>GET DATA CLASS 2</p>
+          <div><button class="dataCollector" data-1hot="1" data-name="Class 2">Hold to Record</button></div>
+        </div>
+        
+        <div class="container3">
+          <div class="container4">
+            <p>TRAIN & PREDICT</p>
+            <button class="buttontrain" id="train">Train &amp; Predict!</button>
+          </div>
+          <div class="container5">
+            <p>RESULT</p>
+            <p id="class1p">Class 1</p>
+            <div id="myProgress">
+              <div id="myBar1">0%</div>
+            </div>
+            <p id="class2p">Class 2</p>
+            <div id="myProgress">
+              <div id="myBar2">0%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- <h1>Make your own "Teachable Machine" using Transfer Learning with MobileNet v3 in TensorFlow.js using saved graph model from TFHub.</h1>
+    <p id="status">Awaiting TF.js load</p>
+    <video id="webcam" autoplay muted></video>
+    <button id="enableCam">Enable Webcam</button>
+    <button class="dataCollector" data-1hot="0" data-name="Class 1">Gather Class 1 Data</button>
+    <button class="dataCollector" data-1hot="1" data-name="Class 2">Gather Class 2 Data</button>
+    <button id="train">Train &amp; Predict!</button>
+    <button id="reset">Reset</button> -->
+    <!-- Import TensorFlow.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0/dist/tf.min.js" type="text/javascript"></script>
+    <!-- Import the page's JavaScript to do some stuff -->
+    <script src="script.js"></script>
+  </body>
+</html>
